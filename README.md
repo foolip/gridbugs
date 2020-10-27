@@ -85,7 +85,7 @@ Or a track listing:
 
 `repeat(3, 200px 100px);`
 
-This includes when the number of repeats is `auto-fill` or `auto-fit` to create as many tracks as will fit. 
+This includes when the number of repeats is `auto-fill` or `auto-fit` to create as many tracks as will fit.
 
 > "The first argument specifies the number of repetitions. The second argument is a track list, which is repeated that number of times." - [Syntac of `repeat()`](https://www.w3.org/TR/css-grid-1/#auto-repeat)
 
@@ -110,7 +110,7 @@ This includes when the number of repeats is `auto-fill` or `auto-fit` to create 
   </tr>
 </table>
 
-There is limited fragmentation support across browsers at present, therefore features such as the `break-*` properties are unlikely to work reliably. For details of how fragmentation should work in Grid Layout see [12. Fragmenting Grid Layout](https://www.w3.org/TR/css-grid-1/#pagination). 
+There is limited fragmentation support across browsers at present, therefore features such as the `break-*` properties are unlikely to work reliably. For details of how fragmentation should work in Grid Layout see [12. Fragmenting Grid Layout](https://www.w3.org/TR/css-grid-1/#pagination).
 
 ### 4. Sizing of items with an intrinsic size inside fixed size tracks
 
@@ -151,7 +151,7 @@ I believe that the correct behavior is to overflow, as per the CSS WG resolution
       <a href="https://codepen.io/rachelandrew/pen/prjQRz">5.2</a> &mdash; <em>workaround</em>
     </td>
     <td>
-     Safari 10 (fixed in Technical Preview)
+     Safari 10 (fixed in Technology Preview)
     </td>
     <td></td>
   </tr>
@@ -176,7 +176,7 @@ The workaround for this is to declare `align-self: start` and `justify-self: sta
       <a href="https://codepen.io/rachelandrew/pen/QMjPXq">6.1</a> &mdash; <em>bug</em>
     </td>
     <td>
-     Safari 10 (fixed in <a href="https://developer.apple.com/safari/technology-preview/release-notes/#r29">Technical Preview 29</a>)
+     Safari 10 (fixed in <a href="https://developer.apple.com/safari/technology-preview/release-notes/#r29">Technology Preview 29</a>)
        </td>
     <td>
       <a href="https://bugs.webkit.org/show_bug.cgi?id=170764">WebKit #170764</a>
@@ -189,7 +189,7 @@ Currently percentage values of `grid-gap` are marked as **at-risk** in the Level
 
 ### 7. Grid gaps should behave as auto-sized tracks?
 
-There is also an interop issue with regard to percentage `grid-row-gap` values, where the height of the grid is not a fixed size. Chrome and Safari TP, plus Edge Preview collapse the row gap to 0. Firefox is using a percentage of the total height, I think. 
+There is also an interop issue with regard to percentage `grid-row-gap` values, where the height of the grid is not a fixed size. Chrome and Safari TP, plus Edge Preview collapse the row gap to 0. Firefox is using a percentage of the total height, I think.
 
 - [Example 7.1](https://codepen.io/rachelandrew/pen/xLZbMm)
 - [CSS WG discussion](https://github.com/w3c/csswg-drafts/issues/509#issuecomment-318812608)
@@ -331,7 +331,7 @@ Thanks to everyone who helped to isolate these issues [here](https://github.com/
   </tr>
 </table>
 
-As detailed by @mrego there is [a longstanding interoperability issue with percentage padding and margins in both Grid and Flexbox](https://github.com/rachelandrew/gridbugs/issues/7). 
+As detailed by @mrego there is [a longstanding interoperability issue with percentage padding and margins in both Grid and Flexbox](https://github.com/rachelandrew/gridbugs/issues/7).
 
 Firefox and Edge (Preview) resolve the percentage margins/paddings on items against their respective dimension (width or height), Chrome always uses width, in the same way that percentages are resolved in block layout. The [specification allows for both possibilities](https://drafts.csswg.org/css-grid/#item-margins), and suggests authors do not use percentage margins and padding.
 
@@ -368,7 +368,7 @@ The workaround for this is to use `justify-content: start` or `justify-content: 
 
 ## Acknowledgments
 
-Gridbugs is maintained by [@rachelandrew](https://twitter.com/rachelandrew) and was heavily inspired by the excellent [Flexbugs](https://github.com/philipwalton/flexbugs). 
+Gridbugs is maintained by [@rachelandrew](https://twitter.com/rachelandrew) and was heavily inspired by the excellent [Flexbugs](https://github.com/philipwalton/flexbugs).
 
 ## Contributing
 
